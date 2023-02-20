@@ -20,7 +20,7 @@ import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
 @ApiTags('job')
 @ApiBearerAuth()
 @Controller('job')
-@UseGuards(JwtAuthGuard)
+// @UseGuards(JwtAuthGuard)
 export class JobController {
   constructor(private readonly jobService: JobService) {}
 
